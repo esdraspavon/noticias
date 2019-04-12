@@ -3,8 +3,6 @@ import React from "react";
 const News = props => {
   const { urlToImage, url, title, description, source } = props.news;
 
-  console.log(urlToImage);
-
   return (
     <div className="col s12 m6 l4">
       <div className="card">

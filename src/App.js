@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./components/Header";
 import NewsContainer from "./components/NewsContainer";
-
+import Form from "./components/Form";
 class App extends Component {
   state = {
     news: []
@@ -29,6 +29,7 @@ class App extends Component {
       <div className="contenedor-app">
         <Header title="Noticias" />
         <div className="container white contenedor-noticias">
+          <Form />
           <NewsContainer news={this.state.news} />
         </div>
       </div>
