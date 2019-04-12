@@ -5,7 +5,9 @@ class NewsContainer extends Component {
   render() {
     return (
       <div className="row">
-        <News />
+        {this.props.news.map(news => (
+          <News key={news.url} news={news} />
+        ))}
       </div>
     );
   }
